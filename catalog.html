@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="#">
+    <ul class="navigation-list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#">О Седоне</a></li>
+      <li><a href="catalog.html">Гостиницы</a></li>
+    </ul>
+    <ul class="navigation-list user-list">
+      <li><a href="#"><span class="visually-hidden">Поиск</span></a></li>
+      <li><a href="#"><span class="visually-hidden">Избранное</span></a></li>
+      <li><a href="#">Хочу сюда</a></li>
+    </ul>
+  </header>
+  <main class="main-inner">
+    <section class="section-filter">
+      <h2 class="visually-hidden">Фильтр для поиска гостинницы</h2>
+      <p>Гостиницы Седоны</p>
+      <ul class="filter-list">
+        <li><a href="#"><span class="visually-hidden">Главная</span></a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+      <form method="post">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label>Бассейн<input type="checkbox" checked></label>
+          <label>Парковка<input type="checkbox" checked></label>
+          <label>Wi-Fi<input type="checkbox"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <label>Гостиница<input type="radio" checked></label>
+          <label>Мотель<input type="radio"></label>
+          <label>Апартаменты<input type="radio"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость, ₽:</legend>
+          <input type="text" name="from" value="0" placeholder="от">
+          <input type="text" name="to" value="9000" placeholder="до">
+        </fieldset>
+        <input type="submit" value="Применить">
+        <button type="button">Сбросить</button>
+      </form>
+    </section>
+    <section class="section-catalog">
+      <header class="header-catalog">
+        <p>Найдено гостиниц: <span>38</span></p>
+        <select>
+          <option>Сначала дешевые</option>
+        </select>
+        <ul class="select-list">
+          <li><button><span class="visually-hidden">Сетка</span></button></li>
+          <li><button><span class="visually-hidden">Хз</span></button></li>
+          <li><button><span class="visually-hidden">Список</span></button></li>
+        </ul>
+      </header>
+      <ul>
+        <li>
+          <a href="#"><img src="#"></a>
+          <a href="#"><h3>Amara Resort & Spa</h3></a>
+          <p><span>Гостиница</span><span>От 4000 ₽</span></p>
+          <a href="#">подробнее</a>
+          <button>в избранное</button>
+          <span>Рейтинг: 8,5</span>
+        </li>
+        <li>
+          <a href="#"><img src="#"></a>
+          <a href="#"><h3>Villas at Poco Diablo</h3></a>
+          <p><span>Гостиница</span><span>От 5000 ₽</span></p>
+          <a href="#">подробнее</a>
+          <button>в избранном</button>
+          <span>Рейтинг: 9,2</span>
+        </li>
+        <li>
+          <a href="#"><img src="#"></a>
+          <a href="#"><h3>Desert Quail Inn</h3></a>
+          <p><span>Гостиница</span><span>От 2500 ₽</span></p>
+          <a href="#">подробнее</a>
+          <button>в избранное</button>
+          <span>Рейтинг: 6,9</span>
+        </li>
+        <li>
+          <a href="#"><img src="#"></a>
+          <a href="#"><h3>GreenTree Inn</h3></a>
+          <p><span>Гостиница</span><span>От 1500 ₽</span></p>
+          <a href="#">подробнее</a>
+          <button>в избранное</button>
+          <span>Рейтинг: 5,0</span>
+        </li>
+      </ul>
+    </section>
+    <section class="section-pagination">
+      <ul>
+        <li><a href=""><span>1</span></a></li>
+        <li><a href="#"><span>2</span></a></li>
+        <li><a href="#"><span>3</span></a></li>
+        <li><a href="#"><span>4</span></a></li>
+        <li><a href="#"><span>...</span></a></li>
+        <li><a href="#"><span>10</span></a></li>
+      </ul>
+    </section>
+    <section class="section-subscribe">
+      <h3>Подпишитесь на рассылку</h3>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribtion-form" method="post">
+        <input type="text" name="search" placeholder="Ваш e-mail">
+        <input type="submit" value="Подписаться">
+      </form>
+    </section>
+  </main>
+<footer>
+    <section class="section-contacts">
+      <ul class="social-list">
+        <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Телеграм</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
+      </ul>
+      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="#"><img src="#"><span class="visually-hidden">HTML Academy</span></a>
+    </section>
+  </footer>
+</body>
+</html>
