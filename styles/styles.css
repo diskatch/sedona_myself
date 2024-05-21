@@ -34,6 +34,17 @@ body {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-container {
   width: 1200px;
   min-height: 100%;
@@ -55,18 +66,18 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin: 0;
   padding: 0;
   width: 339px;
-}
-
-.navigation-item {
-  padding: 20px 16px;
+  list-style: none;
 }
 
 .logo {
+  position: relative;
   margin-right: 30px;
+  margin-bottom: -6px;
 }
 
 .user-list {
@@ -75,6 +86,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -82,6 +94,12 @@ body {
   background-color: #ffffff;
   text-align: center;
   text-decoration: none;
+  padding: 20px 16px;
+}
+
+.user-list .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .section-hero {
@@ -121,8 +139,7 @@ body {
 }
 
 .advantages-list,
-.service-list,
-.navigation-list {
+.service-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -135,13 +152,23 @@ body {
 }
 
 .advantages-item {
+  display: flex;
   width: 400px;
-  padding: 102px 85px;
-  box-sizing: border-box;
 }
 
-.advantages-item-img {
-  margin: 0;
+.advantages-item-wide {
+  width: 100%;
+}
+
+.advantages-item-wide-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantages-item-wrapper {
+  width: 230px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 90px 85px;
 }
 
 .advantages-item:first-child,
@@ -240,6 +267,18 @@ body {
   padding: 40px 70px 30px;
 }
 
+.social-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.social-list-item {
+  min-height: 40px;
+  min-width: 48px;
+}
+
 .footer-number {
   font-size: 40px;
   line-height: 40px;
@@ -251,6 +290,7 @@ body {
 
 .section-filter {
   color: #ffffff;
+  padding: 35px 70px;
 }
 
 .filter-title {
@@ -305,6 +345,14 @@ body {
   display: flex;
 }
 
+.section-catalog {
+  padding: 50px 70px;
+}
+
+.sedona-title {
+  margin-right: 200px;
+}
+
 .catalog-select {
   font-size: 18px;
   line-height: 21px;
@@ -312,8 +360,10 @@ body {
 }
 
 .select-list {
+  display: flex;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .hotel-name {
@@ -346,10 +396,26 @@ body {
 .pagination-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination-item {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 20px;
+  text-align: center;
   text-decoration: none;
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.current {
+  background-color: #f2f2f2;
   color: #000000;
-  background-color: #;
 }
